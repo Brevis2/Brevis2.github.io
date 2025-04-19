@@ -1,7 +1,69 @@
-#header-menu{
+[class*="col-"] {
+    width: 100%;
+  }
+  
+.row {
+    display: block;
+}
+
+@media screen and (max-width: 575.98px) {
+    body {
+        background-color: aqua;
+        width: 98%;
+        display: block;
+    }
+
+    #omne{
+        line-height:;
+    }
+    
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        background-color: blueviolet;
+        width: 95%;
+        padding-left: 2.5%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+    body {
+        background-color: red;
+        width: 85%;
+        padding-left: 7.5%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+        background-color: yellow;
+        width: 75%;
+        padding-left: 12.5%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: green;
+        width: 70%;
+        padding-left: 15%;
+        display: block;
+    }
+} 
+
+#omne{ 
+    display: block;
+}
+
+#omne .dosah h3{
+    display: inline-block;
+}
+
+/*#header-menu{
     float:right
 }
 
 h6{
     float: right
-}
+}*/
