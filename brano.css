@@ -12,57 +12,160 @@
         width: 98%;
         display: block;
     } 
+    .zakladna{
+        display: inline-block; 
+        width: 99%;
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+    .stredna{
+        display: inline-block;   
+        width: 99%;
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+    .vysoka{
+        display: inline-block; 
+        width: 99%;
+        text-align: center;
+    }
+    h2{
+        display: block;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
     body {
         background-color: blueviolet;
-        width: 95%;
-        padding-left: 2.5%;
+        width: 85%;
+        padding-left: 7.5%;
         display: block;
+    }
+    .zakladna{
+        display: inline-block; 
+        width: 99%;
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+    .stredna{
+        display: inline-block;   
+        width: 99%;
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+    .vysoka{
+        display: inline-block; 
+        width: 99%;
+        text-align: center;
+    }
+    h2{
+        display: block;
+        text-align: center;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.98px){
     body {
         background-color: red;
-        width: 85%;
-        padding-left: 7.5%;
+        width: 75%;
+        padding-left: 12.5%;
     }
 
     #omne .dosah h3{
         display: inline;
         padding-right: 7px;
+    }
+    .zakladna{
+        display: inline-block; 
+        width: 49%;
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+    .stredna{
+        display: inline-block;   
+        width: 49%;
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+    .vysoka{
+        display: inline-block; 
+        width: 99%;
+        text-align: center;
+    }
+    h2{
+        display: block;
+        text-align: center;
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
     body {
         background-color: yellow;
-        width: 75%;
-        padding-left: 12.5%;
+        width: 65%;
+        padding-left: 17.5%;
     }
     #omne .dosah h3{
         display: inline;
         padding-right: 7px;
+    }
+    .zakladna{
+        float: left;
+        width: 49%;
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+    .stredna{
+        float: left;  
+        width: 49%;
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+    .vysoka{
+        display: inline-block; 
+        width: 99%;
+        text-align: center;
+    }
+    h2{
+        display: block;
+        text-align: center;
     }
 }
 
 @media screen and (min-width: 1200px) {
     body {
         background-color: green;
-        width: 70%;
-        padding-left: 15%;
+        width: 60%;
+        padding-left: 20%;
         display: block;
     }
     #omne .dosah h3{
         display: inline;
-        padding-right: 7px;
+        padding-right: 14px;
+    }
+    .zakladna{
+        float: left;
+        width: 33.3333%;
+        text-align: center;
+    }
+    .stredna{
+        float: left;   
+        width: 33.3333%;
+        text-align: center;
+    }
+    .vysoka{
+        display: inline-block; 
+        width: 32.3333%;
+        text-align: center;
+    }
+    h2{
+        display: block;
+        text-align: center;
     }
 } 
 
 section{
-    margin: 7rem auto 7rem auto;
+    margin: 0rem auto 10rem auto;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -71,6 +174,7 @@ h1, h2, h3, h4, h5, h6{
 
 p, a{
     font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
 }
 
 a:link, a:visited{
@@ -80,3 +184,13 @@ a:link, a:visited{
 a:hover {
     color: hotpink;
 }
+
+ul {
+    list-style-type:none;
+}
+
+/*#header-menu{
+    float: left;
+    position: fixed;
+    right: 90%;
+}*/
