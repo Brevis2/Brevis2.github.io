@@ -8,15 +8,10 @@
 
 @media screen and (max-width: 575.98px) {
     body {
-        background-color: blue;
+        background-color: aqua;
         width: 98%;
         display: block;
-    }
-
-    /*#omne{
-        line-height:;
-    }*/
-    
+    } 
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -24,6 +19,7 @@
         background-color: blueviolet;
         width: 95%;
         padding-left: 2.5%;
+        display: block;
     }
 }
 
@@ -33,6 +29,11 @@
         width: 85%;
         padding-left: 7.5%;
     }
+
+    #omne .dosah h3{
+        display: inline;
+        padding-right: 7px;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
@@ -40,6 +41,10 @@
         background-color: yellow;
         width: 75%;
         padding-left: 12.5%;
+    }
+    #omne .dosah h3{
+        display: inline;
+        padding-right: 7px;
     }
 }
 
@@ -50,20 +55,28 @@
         padding-left: 15%;
         display: block;
     }
+    #omne .dosah h3{
+        display: inline;
+        padding-right: 7px;
+    }
 } 
 
-#omne{ 
-    display: block;
+section{
+    margin: 7rem auto 7rem auto;
 }
 
-#omne .dosah h3{
-    display: inline-block;
+h1, h2, h3, h4, h5, h6{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/*#header-menu{
-    float:right
+p, a{
+    font-family: 'Times New Roman', Times, serif;
 }
 
-h6{
-    float: right
-}*/
+a:link, a:visited{
+    color:black;
+}
+
+a:hover {
+    color: hotpink;
+}
