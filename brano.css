@@ -12,26 +12,37 @@
         width: 98%;
         display: block;
     } 
-    .zakladna{
-        display: inline-block; 
-        width: 99%;
-        text-align: center;
-        padding-bottom: 6rem;
+    #vzdelanie{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
     }
-    .stredna{
-        display: inline-block;   
+    .bg1{
         width: 99%;
-        text-align: center;
-        padding-bottom: 6rem;
+        height: 300px;
+        margin: 0.5%;
+        display: flex;
     }
-    .vysoka{
-        display: inline-block; 
+    .bg2{ 
         width: 99%;
-        text-align: center;
+        height: 300px;
+        margin: 0.5%;
+        display: flex;
+    }
+    .bg3{
+        width: 99%;
+        height: 300px;
+        margin: 0.5%;
+        display: flex;
     }
     h2{
         display: block;
         text-align: center;
+    }
+    #vzdelanie h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
     }
 }
 
@@ -42,26 +53,40 @@
         padding-left: 7.5%;
         display: block;
     }
-    .zakladna{
-        display: inline-block; 
-        width: 99%;
-        text-align: center;
-        padding-bottom: 6rem;
+    #vzdelanie{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
     }
-    .stredna{
-        display: inline-block;   
+    .bg1{
         width: 99%;
-        text-align: center;
-        padding-bottom: 6rem;
+        height: 300px;
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
     }
-    .vysoka{
-        display: inline-block; 
+    .bg2{ 
         width: 99%;
-        text-align: center;
+        height: 300px;
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .bg3{
+        width: 99%;
+        height: 300px;
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
     }
     h2{
         display: block;
         text-align: center;
+    }
+    #vzdelanie h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
     }
 }
 
@@ -76,26 +101,34 @@
         display: inline;
         padding-right: 7px;
     }
-    .zakladna{
-        display: inline-block; 
-        width: 49%;
-        text-align: center;
-        padding-bottom: 6rem;
+    #vzdelanie{ 
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
     }
-    .stredna{
-        display: inline-block;   
+    .bg1{
         width: 49%;
-        text-align: center;
-        padding-bottom: 6rem;
+        height: 300px;
+        margin: 2rem;
     }
-    .vysoka{
-        display: inline-block; 
+    .bg2{ 
+        width: 49%;
+        height: 300px;
+        margin: 2rem;
+    }
+    .bg3{
         width: 99%;
-        text-align: center;
+        height: 300px;
+        margin: 2rem;
     }
     h2{
         display: block;
         text-align: center;
+    }
+    #vzdelanie h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
     }
 }
 
@@ -109,26 +142,34 @@
         display: inline;
         padding-right: 7px;
     }
-    .zakladna{
-        float: left;
-        width: 49%;
-        text-align: center;
-        padding-bottom: 6rem;
+    #vzdelanie{ 
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
     }
-    .stredna{
-        float: left;  
+    .bg1{
         width: 49%;
-        text-align: center;
-        padding-bottom: 6rem;
+        height: 300px;
+        margin: 2rem;
     }
-    .vysoka{
-        display: inline-block; 
+    .bg2{ 
+        width: 49%;
+        height: 300px;
+        margin: 2rem;
+    }
+    .bg3{
         width: 99%;
-        text-align: center;
+        height: 300px;
+        margin: 2rem;
     }
     h2{
         display: block;
         text-align: center;
+    }
+    #vzdelanie h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
     }
 }
 
@@ -146,18 +187,19 @@
     .bg1{
         float: left;
         width: 33.3333%;
-        text-align: center;
+        padding-bottom: 6rem;
     }
     .bg2{
         float: left;   
         width: 33.3333%;
-        text-align: center;
+        padding-bottom: 6rem;
     }
-    .vysoka{
-        display: inline-block; 
-        width: 32.3333%;
-        text-align: center;
+    .bg3{
+        float: left;   
+        width: 33.3333%;
+        padding-bottom: 6rem;
     }
+    
     h2{
         display: block;
         text-align: center;
@@ -189,51 +231,80 @@ ul {
     list-style-type:none;
 }
 
+.bg1, .bg2, .bg3 {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    margin-bottom: 2rem; 
+}
+
 .bg1{
     background-image: url("img/zs_kubranska.jpg");
     background-size: cover;
+    float:left;
+    width: 33.3333%;
 }
 .zakladna{  
-    opacity:0
+    opacity: 0;
 }
 .bg2{
     background-image: url("img/pgjbtn.jpg");
     background-size: cover;
+    float:left;
+    width: 33.3333%;
 }
 .stredna{  
-    opacity:0
+    opacity: 0;
 }
 .bg3{
     background-image: url("img/fitvut.jpg");
     background-size: cover;
+    float:left;
+    width: 33.3333%;
 }
 .vysoka{  
-    opacity:0
+    opacity: 0;
 }
 
 .bg1:hover{
-    background-image: url("img/zs_kubranska.jpg");
-    background-size: cover;
-    opacity:0.2;
-}
-.zakladna:hover{
-    opacity:1;
+    background-image: none;
+    background-color: white;
+    opacity:0.5;
 }
 .bg2:hover{
-    background-image: url("img/pgjbtn.jpg");
-    background-size: cover;
+    background-image: none;
+    background-color: white;
     opacity:0.5;
-}
-.stredna:hover{
-    opacity:1;
 }
 .bg3:hover{
-    background-image: url("img/fitvut.jpg");
-    background-size: cover;
+    background-image: none;
+    background-color: white;
     opacity:0.5;
 }
-.vysoka:hover{
-    opacity:1;
+.bg1:hover .zakladna{
+    opacity: 1;
+}
+.bg2:hover .stredna{
+    opacity: 1;
+}
+.bg3:hover .vysoka{
+    opacity: 1;
+}
+
+.bg1, .bg2, .bg3 {
+    position: relative;
+    text-align: center;
+}
+
+.zakladna, .stredna, .vysoka {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    text-align: center;
+    color: black;
 }
 
 /*#header-menu{
