@@ -214,7 +214,6 @@ ul {
 .bg1:hover{
     background-image: url("img/zs_kubranska.jpg");
     background-size: cover;
-    overflow: hidden;
     opacity:0.2;
 }
 .zakladna:hover{
