@@ -143,12 +143,12 @@
         display: inline;
         padding-right: 14px;
     }
-    .zakladna{
+    .bg1{
         float: left;
         width: 33.3333%;
         text-align: center;
     }
-    .stredna{
+    .bg2{
         float: left;   
         width: 33.3333%;
         text-align: center;
@@ -187,6 +187,54 @@ a:hover {
 
 ul {
     list-style-type:none;
+}
+
+.bg1{
+    background-image: url("img/zs_kubranska.jpg");
+    background-size: cover;
+}
+.zakladna{  
+    opacity:0
+}
+.bg2{
+    background-image: url("img/pgjbtn.jpg");
+    background-size: cover;
+}
+.stredna{  
+    opacity:0
+}
+.bg3{
+    background-image: url("img/fitvut.jpg");
+    background-size: cover;
+}
+.vysoka{  
+    opacity:0
+}
+
+.bg1:hover{
+    background-image: url("img/zs_kubranska.jpg");
+    background-size: cover;
+    overflow: hidden;
+    opacity:0.2;
+}
+.zakladna:hover{
+    opacity:1;
+}
+.bg2:hover{
+    background-image: url("img/pgjbtn.jpg");
+    background-size: cover;
+    opacity:0.5;
+}
+.stredna:hover{
+    opacity:1;
+}
+.bg3:hover{
+    background-image: url("img/fitvut.jpg");
+    background-size: cover;
+    opacity:0.5;
+}
+.vysoka:hover{
+    opacity:1;
 }
 
 /*#header-menu{
