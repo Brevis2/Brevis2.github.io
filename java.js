@@ -58,7 +58,7 @@ $(document).ready(function() {
       });
     }
     
-    // Spusti pri načítaní
+    // Spusti pri načítani
     $(document).ready(function () {
       toggleTitleForIcons();
       $(window).resize(toggleTitleForIcons);
