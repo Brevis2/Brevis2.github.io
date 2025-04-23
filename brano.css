@@ -121,12 +121,10 @@
         justify-content: center; 
     }
     .bg1, .bg2{
-        box-sizing: border-box;
         width: 48%;
     }
     .bg3{
         width: 99%;
-        box-sizing: border-box;
     }
     h2{
         display: block;
@@ -155,7 +153,7 @@
     }
     .bg1, .bg2, .bg3{
         float: left;
-        width: 31%;
+        width: 31.9%;
         padding-bottom: 6rem;
     }
     h2{
