@@ -1,70 +1,57 @@
-$(document).ready(function() {
-    // Sticky menu
-    let menu = $("#header-menu");
-    let menuOffset = menu.offset().top;
-  
-    $(window).on("scroll", function() {
-      if ($(window).scrollTop() > menuOffset) {
-        menu.addClass("sticky");
-      } else {
-        menu.removeClass("sticky");
-      }
-    });
-  
-    // Hamburger toggle
-    $('#menu-toggle').click(function() {
-    $('.menu ul').toggleClass('menu-opened');
-    $('.menu').toggleClass('menu-opened');
+document.addEventListener("DOMContentLoaded", function () {
+  const menu = document.getElementById("header-menu");
+  const menuOffset = menu.offsetTop;
+  const menuLinks = document.querySelectorAll("#header-menu a[href^='#']");
+  const menuToggle = document.getElementById("menu-toggle");
+  const menuList = menu.querySelector("ul");
+
+  // Sticky menu pri scrollovaní
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > menuOffset) {
+      menu.classList.add("sticky");
+    } else {
+      menu.classList.remove("sticky");
+    }
   });
-  
-    // Scroll with offset animation
-    $(".menu a[href^='#']").click(function(e) {
+
+  // Scrollovanie s offsetom
+  menuLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
       e.preventDefault();
-      let target = $(this.getAttribute("href"));
-      if (target.length) {
-        let offset = menu.outerHeight();
-        $("html, body").animate({
-          scrollTop: target.offset().top - offset
-        }, 1000);
-      }
-    });
-  
-    // Titles on hover for small screens
-    function toggleTitle() {
-      if (window.innerWidth < 768) {
-        $(".menu li a").each(function() {
-          let span = $(this).find("span");       
-          if (span.is(":hidden")) {
-            $(this).attr("title", span.text());
-          } else {
-            $(this).removeAttr("title");
-          }
+      const targetId = this.getAttribute("href").substring(1);
+      const target = document.getElementById(targetId);
+
+      if (target) {
+        const offset = menu.offsetHeight;
+        const targetPosition = target.offsetTop - offset;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
         });
-      } else {
-        $(".menu li a").removeAttr("title");
       }
-    }
-    
-    function toggleTitleForIcons() {
-      $(".menu li a").each(function () {
-        let span = $(this).find("span");
-    
-        // ak span nie je viditeľný (tzn. display: none)
-        if (span.css("display") === "none") {
-          $(this).attr("title", span.text());
-        } else {
-          $(this).removeAttr("title");
-        }
-      });
-    }
-    
-    // Spusti pri načítani
-    $(document).ready(function () {
-      toggleTitleForIcons();
-      $(window).resize(toggleTitleForIcons);
     });
-  
-    toggleTitle();
-    $(window).resize(toggleTitle);
   });
-  
+
+  // Hamburger toggle
+  menuToggle.addEventListener("click", function () {
+    menuList.classList.toggle("menu-opened");
+    menu.classList.toggle("menu-opened");
+  });
+
+  // Title pre malé obrazovky
+  function toggleTitleForIcons() {
+    const links = document.querySelectorAll(".menu li a");
+    links.forEach(function (link) {
+      const span = link.querySelector("span");
+      if (window.innerWidth < 768 && span && window.getComputedStyle(span).display === "none") {
+        link.setAttribute("title", span.textContent);
+      } else {
+        link.removeAttribute("title");
+      }
+    });
+  }
+
+  toggleTitleForIcons();
+  window.addEventListener("resize", toggleTitleForIcons);
+});
