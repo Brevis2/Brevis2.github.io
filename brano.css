@@ -1,4 +1,4 @@
-[class*="col-"] {
+[class*="col-"]{
     width: 100%;
   }
   
@@ -6,8 +6,8 @@
     display: block;
 }
 
-@media screen and (max-width: 575.98px) {
-    body > :not(:first-child, :last-child) {
+@media screen and (max-width: 575.98px){
+    body > :not(:first-child, :last-child){
         width: 98%;
         display: block;
     }
@@ -35,7 +35,7 @@
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767.98px) {
+@media screen and (min-width: 576px) and (max-width: 767.98px){
     body > :not(:first-child, :last-child) {
         width: 85%;
         padding-left: 7.5%;
@@ -100,7 +100,7 @@
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
     body > :not(:first-child, :last-child) {
         width: 65%;
         padding-left: 17.5%;
@@ -135,7 +135,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px){
     body > :not(:first-child, :last-child){
         width: 60%;
         padding-left: 20%;
@@ -169,7 +169,7 @@
     }
 } 
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px){
     #menu-toggle {
         display: block;
         font-size: 3rem;
@@ -292,7 +292,7 @@ ul {
     list-style-type:none;
 }
 
-.zakladna, .stredna, .vysoka{  
+.zakladna, .stredna, .vysoka{
     opacity: 0;
 }
 
@@ -382,7 +382,3 @@ ul {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">🚗</text></svg>') 16 16, auto;
 }
 
-
-
-
-  
