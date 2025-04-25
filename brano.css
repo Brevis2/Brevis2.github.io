@@ -373,4 +373,14 @@ ul {
     100%  {left:95%; top:0px;}
 }
 
+#zaujimavosti p:nth-child(3):hover{
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.kurzor {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">🚗</text></svg>') 16 16, auto;
+}
+
+
   
