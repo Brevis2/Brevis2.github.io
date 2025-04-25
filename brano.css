@@ -233,7 +233,7 @@ section{
     border-bottom: 3px solid rgb(119, 6, 6);
 }
 
-#vzdelanie{
+#vzdelanie, #social{
     border-bottom:none;
 }
 
@@ -271,6 +271,11 @@ h6{
     color: red;
 }
 
+#social i{
+    font-size: 5rem;
+    padding: 0 1rem;
+}
+
 a:link, a:visited{
     color:black;
 }
@@ -279,7 +284,7 @@ a:hover {
     color: pink;
 }
 
-#header-menu a:hover {
+#header-menu a:hover, #social i:hover{
     color: rgb(212, 83, 104);
 }
 
