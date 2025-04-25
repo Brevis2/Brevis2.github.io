@@ -6,15 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const menuList = menu.querySelector("ul");
 
   // Sticky menu pri scrollovaní
-  window.addEventListener("scroll", function () {
+  /*window.addEventListener("scroll", function () {
     if (window.scrollY > menuOffset) {
       menu.classList.add("sticky");
     } else {
       menu.classList.remove("sticky");
     }
-  });
+  });*/
 
-  // Scrollovanie s offsetom
   menuLinks.forEach(function (link) {
     link.addEventListener("click", function (e) {
       e.preventDefault();
@@ -33,24 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Hamburger toggle
   menuToggle.addEventListener("click", function () {
     menuList.classList.toggle("menu-opened");
     menu.classList.toggle("menu-opened");
   });
-
-  // Title pre malé obrazovky
-  function toggleTitleForIcons() {
-    const links = document.querySelectorAll(".menu li a");
-    links.forEach(function (link) {
-      const span = link.querySelector("span");
-      if (window.innerWidth < 768 && span && window.getComputedStyle(span).display === "none") {
-        link.setAttribute("title", span.textContent);
-      } else {
-        link.removeAttribute("title");
-      }
-    });
-  }
 
   toggleTitleForIcons();
   window.addEventListener("resize", toggleTitleForIcons);

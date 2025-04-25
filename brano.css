@@ -158,7 +158,44 @@
         display: block;
         text-align: center;
     }
+    #menu-toggle {
+        display: none;
+    }
+    #header-menu nav ul {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+    }
 } 
+
+@media screen and (max-width: 1199.98px) {
+    #menu-toggle {
+        display: block;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+  
+    #header-menu nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(238, 211, 216);
+        position: absolute;
+        top: 70%;
+        right: 0%;
+        width: 100%;
+        z-index: -1;
+    }
+  
+    #header-menu.menu-opened nav ul {
+        display: flex;
+    }
+  
+    #header-menu nav ul li {
+        padding: 0.4rem;
+        text-align: center;
+    }
+}
 
 body {
     background-color: rgb(185, 55, 55);
@@ -180,6 +217,10 @@ body > :first-child/*menu*/{
     display: inline;
     padding-right: 2rem;
     font-size: 1.533rem;
+}
+
+#header-menu i{
+    padding-right: 0.2rem;
 }
 
 body > :last-child{
