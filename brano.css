@@ -354,7 +354,7 @@ ul {
     width: 50px;
     height: 50px;
     background: black;
-    position: relative;
+    position: relative; /*kocka*/
 }
 .dom:hover .div2{
     animation-name: dom;
@@ -365,20 +365,19 @@ ul {
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     position: relative;
-    border-bottom: 37.5px solid black; 
+    border-bottom: 37.5px solid black; /*trojuholnik*/
 }
 
 @keyframes dom {
     0%   {left:0px; top:0px;}
-    100%  {left:95%; top:0px;}
+    100%  {left:95%; top:0px;} 
 }
 
 #zaujimavosti p:nth-child(3):hover{
     font-family: 'Dancing Script', cursive;
-
 }
 
 .kurzor {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">🚗</text></svg>') 16 16, auto;
-}
+} /*zmeni emoji na svg*/
 
